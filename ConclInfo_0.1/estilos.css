@@ -1,0 +1,186 @@
+@import url("reset.css");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+
+body{background-color: #B0C4DE;
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	font-family: verdana;
+	color: #2F4F4F;
+	margin: 0;
+	padding: 0;
+    }
+	
+/* Formatação da página Index */
+					   
+#divum{width: 610px;
+       height: 250px;
+       position: absolute;
+       top:120px;
+       left:370px;
+      }
+
+#divdois{width: 1100px;
+         height: 290px;
+		 padding: 10px 10px;
+         position: absolute;
+         top:500px;
+         left:122px;
+		 text-align: center;
+		 
+		 /* n° colunas textuais*/
+	 
+         -webkit-column-count: 1; /*Chrome, Safari, Opera*/
+	     -moz-column-count: 1; /*Firefox*/
+	     column-count: 1;
+        }
+		
+#divum, #divdois{border-radius: 5px;
+				 background-color: rgba(18, 31, 31, 0.6);
+			    }
+																  
+#pum{font-size: 98%;
+	 color:#FFFAFA;
+     text-shadow: 0.1px 0.1px 0.1px #1C1C1C;
+    }
+
+#imgum{position: absolute;
+	   top:30px;
+	   left:30px;
+	  }
+		
+#imgdois{margin: 6px;
+	     box-shadow: 0 0 2px #1C1C1C;
+	     border: 1px outset #2F4F4F;
+		 border-radius: 2px;
+	    }
+
+/* Formatação da página Inicial */
+	
+.container{margin: 350px 200px 0px 200px;
+		  }
+		  
+.divsombra{box-shadow: 0 0 350px #1F3149;
+          }	
+
+.banner{background-image: url(imagem/img06.jpg); 
+		background-size: 949px 350px; 
+		top:0px;
+        left:200px;
+		width: 949px;
+        height: 350px;
+		position: absolute;
+		-webkit-animation-name: example; /*Chrome, Safari, Opera*/
+		-webkit-animation-duration: 4s; /*Chrome, Safari, Opera*/
+		-webkit-animation-iteration-count: infinite; /*Chrome, Safari, Opera*/
+		animation-name: example;
+	    animation-duration: 60s;
+		animation-iteration-count: infinite;
+	   }
+
+/*Chrome, Safari, Opera*/		 
+@-webkit-keyframes example{0%{background-image: url(imagem/img06.jpg);}
+						   25%{background-image: url(imagem/img17jpg);}
+						   50%{background-image: url(imagem/img16.jpg);}
+						   100%{background-image: url(imagem/img15.jpg);}
+				          }
+						  
+@keyframes example{0%{background-image: url(imagem/img06.jpg);}
+				  25%{background-image: url(imagem/img17.jpg);}
+				  50%{background-image: url(imagem/img16.jpg);}
+				  100%{background-image: url(imagem/img15.jpg);}
+				 }
+	   
+		  
+.divum{background-color: #FFFAFA;
+	   padding: 20px;
+	  }
+	  
+.divdois{padding: 20px;
+		 font-size: 100%;
+		 
+		 /* n° colunas textuais*/
+	 
+         -webkit-column-count: 1; /*Chrome, Safari, Opera*/
+	     -moz-column-count: 1; /*Firefox*/
+	     column-count: 1;
+	    }
+				
+.divmenu{padding: 15px;
+		}
+		
+.divmenu, .divdois{text-align: center;
+                   float:center;	
+				  }
+
+.banner, .divmenu, .divdois{background-color: #315077;
+						   }
+						 
+.titum{font-size: 210%;
+	   margin: 20px;
+	  }
+
+.titdois{text-align: justify;
+		 font-size: 90%;
+		 margin: 8px;		 
+         padding: 15px 15px; 
+		 overflow: auto;
+        }
+		
+.tittres{color:#FFFAFA;
+         font-size: 100%;
+         text-align: center;
+	    }
+		
+.titum, .titdois, .tittres{text-shadow: 0.1px 0.1px 0.1px #1C1C1C;
+						  }
+	  
+.imgdois{margin: 20px 10px 10px 10px;
+		}
+	   
+.imgtres{float:right;
+		}
+
+.imgqua{float:left; 
+	   }	
+	   
+.imgtres, .imgqua{margin: 20px;
+		         }
+	   
+.imgdois, .imgtres, .imgqua{box-shadow: 0 0 8px #1C1C1C;
+							border: 1px outset #2F4F4F;
+							border-radius: 2px;
+							}
+							
+h1{text-shadow: 0.1px 0.1px 0.1px #1C1C1C;
+  font-size: 160%;
+  margin: 20px;
+  }
+		
+ul{padding:0.5px;
+   margin:0.5px;
+   list-style:none;
+   text-shadow: 0.1px 0.1px 0.1px #1C1C1C;
+  }
+  
+ul li a{color: #FFFAFA;
+    text-decoration: none; 
+    font-size: 100%;
+    padding: 2px 20px;
+    }
+	 
+ul li{display: inline;
+  }	
+  
+ul li:hover{background-color: #223853;
+		 padding: 14px
+        }
+
+a{color: #2F4F4F;
+  text-decoration: none; 
+ } 
+			
+a:hover{text-shadow: 0.5px 0.5px 0.5px #2F4F4F;
+	    color: #FFFAFA;
+	   } 
+	   
