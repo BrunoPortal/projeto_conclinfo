@@ -55,48 +55,61 @@ body{background-color: #B0C4DE;
 		 border-radius: 2px;
 	    }
 
-/* Formatação da página Inicial */
+/* Formatação da página Home */
 	
-.container{margin: 350px 200px 0px 200px;
+.container{margin: 0px 200px 0px 200px;
+		   box-shadow: 0 0 350px #1F3149;
 		  }
-		  
-.divsombra{box-shadow: 0 0 350px #1F3149;
-          }	
 
-.banner{background-image: url(imagem/img06.jpg); 
-		background-size: 949px 350px; 
-		top:0px;
-        left:200px;
-		width: 949px;
-        height: 350px;
+.bannerum{width: 949px;
+		  height: 220px;
+		  background-color: #FFFAFA;
+		 }
+		 
+.bemvindo{top:20px;
+		  left:1030px;
+		  position: absolute;
+	     }
+		 
+.slogan{top:30px;
+		left:230px;
 		position: absolute;
-		-webkit-animation-name: example; /*Chrome, Safari, Opera*/
-		-webkit-animation-duration: 4s; /*Chrome, Safari, Opera*/
-		-webkit-animation-iteration-count: infinite; /*Chrome, Safari, Opera*/
-		animation-name: example;
-	    animation-duration: 60s;
-		animation-iteration-count: infinite;
+        width: 450px;
+		height: 160px;
 	   }
+		  
+.bannerdois{background-image: url(imagem/img06.jpg); 
+			background-size: 949px 350px; 
+			width: 949px;
+			height: 330px;
+		
+			-webkit-animation-name: animacao; /*Chrome, Safari, Opera*/
+			-webkit-animation-duration: 60s; /*Chrome, Safari, Opera*/
+			-webkit-animation-iteration-count: infinite; /*Chrome, Safari, Opera*/
+		
+			animation-name: animacao;
+			animation-duration: 60s;
+			animation-iteration-count: infinite;
+			}
 
 /*Chrome, Safari, Opera*/		 
-@-webkit-keyframes example{0%{background-image: url(imagem/img06.jpg);}
-						   25%{background-image: url(imagem/img17jpg);}
-						   50%{background-image: url(imagem/img16.jpg);}
-						   100%{background-image: url(imagem/img15.jpg);}
-				          }
+@-webkit-keyframes animacao{0%{background-image: url(imagem/img06.jpg);}
+						    25%{background-image: url(imagem/img07.jpg);}
+						    50%{background-image: url(imagem/img08.jpg);}
+						    100%{background-image: url(imagem/img09.jpg);}
+				           }
 						  
-@keyframes example{0%{background-image: url(imagem/img06.jpg);}
-				  25%{background-image: url(imagem/img17.jpg);}
-				  50%{background-image: url(imagem/img16.jpg);}
-				  100%{background-image: url(imagem/img15.jpg);}
-				 }
+@keyframes animacao{0%{background-image: url(imagem/img06.jpg);}
+				    25%{background-image: url(imagem/img07.jpg);}
+				    50%{background-image: url(imagem/img08.jpg);}
+				    100%{background-image: url(imagem/img09.jpg);}
+				   }
 	   
 		  
-.divum{background-color: #FFFAFA;
-	   padding: 20px;
-	  }
+.article{background-color: #FFFAFA;
+	    }
 	  
-.divdois{padding: 20px;
+.footer{padding: 20px;
 		 font-size: 100%;
 		 
 		 /* n° colunas textuais*/
@@ -106,15 +119,12 @@ body{background-color: #B0C4DE;
 	     column-count: 1;
 	    }
 				
-.divmenu{padding: 15px;
+.footer{text-align: center;
+	     float:center;	
 		}
 		
-.divmenu, .divdois{text-align: center;
-                   float:center;	
-				  }
-
-.banner, .divmenu, .divdois{background-color: #315077;
-						   }
+.bannerdois, .footer{background-color: #315077;
+			        }
 						 
 .titum{font-size: 210%;
 	   margin: 20px;
@@ -134,7 +144,7 @@ body{background-color: #B0C4DE;
 		
 .titum, .titdois, .tittres{text-shadow: 0.1px 0.1px 0.1px #1C1C1C;
 						  }
-	  
+						  
 .imgdois{margin: 20px 10px 10px 10px;
 		}
 	   
@@ -156,31 +166,36 @@ h1{text-shadow: 0.1px 0.1px 0.1px #1C1C1C;
   font-size: 160%;
   margin: 20px;
   }
-		
-ul{padding:0.5px;
-   margin:0.5px;
-   list-style:none;
-   text-shadow: 0.1px 0.1px 0.1px #1C1C1C;
-  }
   
-ul li a{color: #FFFAFA;
-    text-decoration: none; 
-    font-size: 100%;
-    padding: 2px 20px;
-    }
-	 
-ul li{display: inline;
-  }	
-  
-ul li:hover{background-color: #223853;
-		 padding: 14px
-        }
-
 a{color: #2F4F4F;
   text-decoration: none; 
  } 
 			
 a:hover{text-shadow: 0.5px 0.5px 0.5px #2F4F4F;
-	    color: #FFFAFA;
-	   } 
-	   
+	    color: #315077;
+	   }
+		 
+.menu li{background-color: #315077;
+       position:relative; 
+	   float:left;
+      }
+
+.menu li a{color:#FFFAFA; 
+        text-decoration:none; 
+		display:block;
+		font-size: 100%;
+        padding: 17px 28.2px;
+		}
+ 
+.menu li a:hover{background:#223853; 
+			  }
+
+.menu li  ul{position:absolute;  
+         display:none;
+		 background-color: #315077;
+        } 
+
+.menu li:hover ul, .menu li.over ul, .menu li ul li{display:block;
+										width:200px;
+									   }
+		
